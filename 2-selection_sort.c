@@ -22,6 +22,8 @@ a = array[j];
 k = j;
 }
 }
+else
+k = i;
 }
 array[k] = array[i];
 array[i] = a;
