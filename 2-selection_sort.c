@@ -22,9 +22,9 @@ k = j;
 b = 1;
 }
 }
+if (b != 0){
 array[k] = array[i];
 array[i] = a;
-if (b != 0){
 print_array(array, size);
 }
 }
