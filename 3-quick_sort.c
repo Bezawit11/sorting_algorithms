@@ -37,10 +37,10 @@ array[i] = array[j];
 array[j] = a;
 j++;}
 }
+print_array(array, size);
 a = array[high];
 array[high] = array[j];
 array[j] = a;
-print_array(array, size);
 quick_sort_helper(array, low, j - 1, size);
 quick_sort_helper(array, j + 1, high, size);
 }
