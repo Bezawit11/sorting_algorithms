@@ -22,12 +22,12 @@ print_array(array, size);
 void quick_sort_helper(int *array, int low , int high, int size)
 
 {
+int p = array[high];
+int j = low, i, a;
 if (low >= high)
 {
 return;
 }
-int p = array[high];
-int j = low, i, a;
 for (i = low; i < high; i++)
 {
 if (array[i] <= p)
