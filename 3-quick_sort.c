@@ -10,7 +10,6 @@
 {
 int a = size;
 quick_sort_helper(array, 0, a - 1, a);
-print_array(array, size);
 }
 
 
@@ -28,19 +27,16 @@ if (low >= high)
 {
 return;
 }
-for (i = low; i < high; i++)
-{
-if (array[i] <= p)
-{
-a = array[i];
+for (i = low; i <= high; i++){
+if (array[i] <= p){
+a = array[i]; //7
 array[i] = array[j];
 array[j] = a;
-j++;}
+j++;
+if (j - 1 != i){
+print_array(array, size);}
 }
-print_array(array, size);
-a = array[high];
-array[high] = array[j];
-array[j] = a;
-quick_sort_helper(array, low, j - 1, size);
-quick_sort_helper(array, j + 1, high, size);
+}
+quick_sort_helper(array, low, j - 2, size);
+quick_sort_helper(array, j, high, size);
 }
