@@ -18,13 +18,13 @@ quick_sort_helper(array, 0, a - 1, a);
 }
 
 /**
- *quick_sort_helper - a recursive function that partitions an array and quick sorts
+ *quick_sort_helper - a recursive function that partitions an array
  *@array: array of integers to be sorted
  *@low: the lowest position
  *@high: the highest position
  *Return: void
  */
-void quick_sort_helper(int *array, int low , int high, int size)
+void quick_sort_helper(int *array, int low, int high, int size)
 
 {
 int p = array[high];
@@ -40,10 +40,11 @@ if (array[i] <= p)
 a = array[i];
 array[i] = array[j];
 array[j] = a;
-j++; 
+j++;
 if (j - 1 != i)
 {
-print_array(array, size);}
+print_array(array, size);
+}
 }
 }
 quick_sort_helper(array, low, j - 2, size);
