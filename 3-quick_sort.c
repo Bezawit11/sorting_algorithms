@@ -22,6 +22,7 @@ quick_sort_helper(array, 0, a - 1, a);
  *@array: array of integers to be sorted
  *@low: the lowest position
  *@high: the highest position
+ *@size: size of the array
  *Return: void
  */
 void quick_sort_helper(int *array, int low, int high, int size)
