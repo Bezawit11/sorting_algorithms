@@ -29,7 +29,7 @@ return;
 }
 for (i = low; i <= high; i++){
 if (array[i] <= p){
-a = array[i]; //7
+a = array[i];
 array[i] = array[j];
 array[j] = a;
 j++;
