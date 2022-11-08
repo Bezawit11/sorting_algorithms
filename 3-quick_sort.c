@@ -9,6 +9,10 @@
 
 {
 int a = size;
+if (array == NULL)
+{
+return;
+}
 quick_sort_helper(array, 0, a - 1, a);
 }
 
