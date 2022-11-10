@@ -27,7 +27,8 @@ k = j;
 b = 1;
 }
 }
-if (b != 0){
+if (b != 0)
+{
 array[k] = array[i];
 array[i] = a;
 print_array(array, size);
