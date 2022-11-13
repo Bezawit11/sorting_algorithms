@@ -24,7 +24,8 @@ tmpp = try->prev;
 tmpn = try->next;
 if (tmpp != NULL)
 {
-tmpp->next = tmpn;}
+tmpp->next = tmpn;
+}
 tmpn->prev = tmpp;
 try->next = tmpn->next;
 tmpn->next = try;
