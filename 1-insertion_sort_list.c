@@ -11,12 +11,19 @@ void insertion_sort_list(listint_t **list)
 listint_t *tmpp = malloc(sizeof(listint_t));
 listint_t *tmpn = malloc(sizeof(listint_t));
 listint_t *try = malloc(sizeof(listint_t));
+if (list == NULL || *list == NULL)
+{
+return;
+}
 try = *list;
-while (try->next != NULL){
-if (try->n > try->next->n){
+while (try->next != NULL)
+{
+if (try->n > try->next->n)
+{
 tmpp = try->prev;
 tmpn = try->next;
-if (tmpp != NULL){
+if (tmpp != NULL)
+{
 tmpp->next = tmpn;}
 tmpn->prev = tmpp;
 try->next = tmpn->next;
